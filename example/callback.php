@@ -5,6 +5,14 @@ namespace MailControl\Example;
 // Each one has to be in the same namespace.
 class TestController
 {
+    /**
+     * An email to "test@randstand.ch" with a subject like "start
+     * service" and a body like "services[] = foobar" will trigger
+     * this method.
+     * 
+     * @param array $services
+     * @param bool $force
+     */
     public function startServiceAction(array $services, $force = true)
     {
         var_dump(func_get_args());
