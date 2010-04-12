@@ -1,1 +1,27 @@
-Really?
+What's it all about?
+====================
+
+So the general idea here is to provide an interface to control an application
+by email. Let's look at an very simple example.
+
+Imagine you have the following class defined:
+
+    class Server
+    {
+        public function restartServices(array $services, $force = false)
+        {
+            // Restart services ...
+        }
+    }
+    
+We can represent this definition within an email:
+
+    What?               Origin?                     Example?
+    -----               -------                     --------
+    class name          "to" header value           "server@example.org"
+    method name         "subject" header value      "restart services"
+    parameters          message body                "services[] = mysql
+                                                    services[] = apache
+                                                    force = true"
+
+This mapping is the goal of MailControl. Let's do this!
