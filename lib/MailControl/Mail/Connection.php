@@ -135,7 +135,7 @@ class Connection
      * @param string $pattern
      * @return array
      */
-    public function listOtherConnectiones($pattern = '*')
+    public function listOtherMailboxes($pattern = '*')
     {
         $this->connect();
         
@@ -154,7 +154,7 @@ class Connection
      * @param string $mailbox
      * @return MailControl\Mail\Connection
      */
-    public function selectConnection($mailbox)
+    public function selectMailbox($mailbox)
     {
         $this->connect();
         
@@ -209,7 +209,7 @@ class Connection
     }
     
     
-    public function getNewMessages()
+    public function getMessages()
     {
         $collection = new Message\Collection();
         

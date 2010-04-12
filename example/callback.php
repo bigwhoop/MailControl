@@ -29,7 +29,7 @@ $mailbox = new Connection('{imap.randstand.ch:993/ssl/novalidate-cert}', 'test@r
 // Setup front controller
 use MailControl\Controller\Front as FrontController;
 $front = new FrontController();
-$front->setMessageCollection($mailbox->getNewMessages())
+$front->setMessageCollection($mailbox->getMessages())
       ->getDispatcher()->setCallbackNamespace(__NAMESPACE__);
 
 // Rock 'n roll! \m/
