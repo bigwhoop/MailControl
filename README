@@ -2,9 +2,9 @@ What's it all about?
 ====================
 
 So the general idea here is to provide an interface to control an application
-by email. Let's look at an very simple example.
+by email. Let's look at a very simple example.
 
-Imagine you have the following class defined:
+Imagine you have defined the following class:
 
     class Server
     {
@@ -20,7 +20,7 @@ We can represent this definition within an email:
     -----               -------                     --------
     class name          "to" header value           "server@example.org"
     method name         "subject" header value      "restart services"
-    parameters          message body                "services[] = mysql
+    arguments           message body                "services[] = mysql
                                                     services[] = apache
                                                     force = true"
 
