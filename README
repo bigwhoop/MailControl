@@ -28,7 +28,7 @@ This mapping is the goal of MailControl. Let's do this!
 
 Run unit tests:
 
-    phpunit lib/Tests
+    phpunit standalone/tests
     
 TODO
 ====
