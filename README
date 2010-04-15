@@ -25,3 +25,12 @@ We can represent this definition within an email:
                                                     force = true"
 
 This mapping is the goal of MailControl. Let's do this!
+
+Run tests in the lib/ folder:
+
+    phpunit Tests
+    
+TODO
+====
+
+* write unit tests
