@@ -16,4 +16,9 @@ class CamelCaseTest extends \PHPUnit_Framework_TestCase
      * @return string
      */
     //public function filter($value, array $options = array())
+    public function testFilter()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+    
 }

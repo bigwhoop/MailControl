@@ -6,4 +6,8 @@ require_once 'PHPUnit/Framework.php';
 
 class StandardTest extends \PHPUnit_Framework_TestCase
 {
+    public function testSomething()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
 }

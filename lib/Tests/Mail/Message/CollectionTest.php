@@ -8,6 +8,10 @@ use MailControl\Mail\Message;
 
 class CollectionTest extends \PHPUnit_Framework_TestCase
 {
+    public function testSomething()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
     /**
      * Add a message to the collection
      * 
