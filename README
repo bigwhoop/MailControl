@@ -26,9 +26,9 @@ We can represent this definition within an email:
 
 This mapping is the goal of MailControl. Let's do this!
 
-Run tests in the lib/ folder:
+Run unit tests:
 
-    phpunit Tests
+    phpunit lib/Tests
     
 TODO
 ====
