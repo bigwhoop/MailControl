@@ -6,9 +6,9 @@ $autoloader = Zend_Loader_Autoloader::getInstance();
 $autoloader->registerNamespace('ZendX');
 
 $mailbox = new Zend_Mail_Storage_Imap(array(
-    'host'     => 'imap.randstand.ch',
-    'user'     => 'test@randstand.ch',
-    'password' => 'qwertz'
+    'host'     => 'imap.example.org',
+    'user'     => 'test@example.org',
+    'password' => '...'
 ));
 
 if ($mailbox->countMessages()) {

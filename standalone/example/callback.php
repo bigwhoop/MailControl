@@ -24,7 +24,7 @@ require __DIR__ . '/../build/build-phar.php';
 
 // Get mailbox
 use MailControl\Mail\Connection;
-$mailbox = new Connection('{imap.randstand.ch:993/ssl/novalidate-cert}', 'test@randstand.ch', 'qwertz');
+$mailbox = new Connection('{imap.example.org:993/ssl/novalidate-cert}', 'test@example.org', '...');
 
 // Setup front controller
 use MailControl\Controller\Front as FrontController;
